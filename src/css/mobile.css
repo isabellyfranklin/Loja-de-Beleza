@@ -1,0 +1,543 @@
+/* =============================================
+   MOBILE.CSS — até 767px
+   Loja de Beleza
+============================================= */
+
+/* ========== HEADER ========== */
+
+.barra-de-promocao {
+    font-size: 11px;
+    height: 20px;
+    padding: 0 8px;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000000;
+    padding: 10px 14px;
+    position: relative;
+}
+
+.logo {
+    width: 100px;
+    height: 35px;
+}
+
+/* Ícone hamburguer */
+#menu {
+    display: block;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 28px;
+}
+
+nav {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 55px;
+    left: 0;
+    background-color: #000000;
+    padding: 16px 0;
+    z-index: 100;
+}
+
+nav.aberto {
+    display: block;
+}
+
+nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    list-style: none;
+}
+
+nav a {
+    font-size: 15px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.acessos {
+    display: none;
+}
+
+/* ========== HERO SLIDER ========== */
+.slider {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+}
+
+
+/* ========== PRODUTOS MAIS VENDIDOS ========== */
+.produtos-mais-vendidos {
+    margin-top: 30px;
+}
+
+.produtos-mais-vendidos .titulo-mais-vendido {
+    margin: 10px 14px;
+}
+
+.produtos-mais-vendidos .titulo-mais-vendido h1 {
+    font-size: 20px;
+}
+
+.slider-container-mais-vendidos {
+    align-items: center;
+}
+
+.btn-voltar,
+.btn-anterior {
+    width: 36px;
+    min-width: 36px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #000;
+}
+
+/* 2 cards visíveis no mobile */
+.container-mais-vendidos .card {
+    min-width: 50%;
+}
+
+.container-mais-vendidos .card-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 16px;
+}
+
+.container-mais-vendidos .card-img img {
+    width: 100px;
+    height: 100px;
+}
+
+.container-mais-vendidos .card-nome {
+    font-size: 13px;
+    width: 130px;
+    height: auto;
+}
+
+.container-mais-vendidos .card-preco .preco-atual {
+    font-size: 16px;
+}
+
+.container-mais-vendidos .card-preco .preco-antigo {
+    font-size: 12px;
+}
+
+.container-mais-vendidos .card .btn-carrinho {
+    width: 120px;
+    height: 28px;
+    font-size: 10px;
+}
+
+/* ========== LANÇAMENTO E SOBRE ========== */
+
+.lancamento-sobre {
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 20px;
+    padding: 0 14px;
+    overflow: visible;
+}
+
+.lancamento-sobre .lancamento {
+    width: 100%;
+    height: auto;
+}
+
+.lancamento .slider-lancamento {
+    width: 100%;
+    height: 220px;
+    border-radius: 16px;
+}
+
+.sobre {
+    width: 100%;
+    height: auto;
+    padding: 0;
+}
+
+.sobre h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.sobre .textos-sobre {
+    width: 100%;
+}
+
+.texto-sobre {
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.texto-pequeno-sobre {
+    font-size: 12px;
+}
+
+.sobre .btn-saiba-mais {
+    width: 100%;
+    margin: 14px 0 0;
+    justify-content: center;
+}
+
+.sobre .btn-saiba-mais button {
+    width: 50%;
+    margin-left: 0;
+    height: 38px;
+    font-size: 14px;
+}
+
+/* ========== PRODUTOS LÁBIOS ========== */
+
+.produtos-labios {
+    margin-top: 40px;
+}
+
+.produtos-labios .titulo-labios {
+    margin: 10px 14px;
+}
+
+.produtos-labios .titulo-labios h1 {
+    font-size: 20px;
+}
+
+.btn-voltar-labios,
+.btn-anterior-labios {
+    width: 36px;
+    min-width: 36px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #000;
+}
+
+.container-labios .card {
+    min-width: 50%;
+}
+
+.container-labios .card-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 16px;
+}
+
+.container-labios .card-img img {
+    width: 100px;
+    height: 100px;
+}
+
+.container-labios .card-nome {
+    font-size: 13px;
+    width: 130px;
+    height: auto;
+}
+
+.container-labios .card-preco .preco-atual {
+    font-size: 16px;
+}
+
+.container-labios .card-preco .preco-antigo {
+    font-size: 12px;
+}
+
+.container-labios .btn-carrinho {
+    width: 120px;
+    height: 28px;
+    font-size: 10px;
+}
+
+/* ========== BANNER DE DESCONTO ========== */
+
+.desconto {
+    margin-top: 30px;
+    height: auto;
+    padding: 0 10px;
+}
+
+.aviso-desconto {
+    flex-direction: column;
+    height: auto;
+    padding: 16px 12px;
+    gap: 12px;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+}
+
+.aviso-desconto__texto {
+    font-size: 13px;
+}
+
+.aviso-desconto a {
+    font-size: 11px;
+    width: 140px;
+    height: 34px;
+}
+
+/* ========== PRODUTOS ROSTO ========== */
+
+.produtos-rosto {
+    margin-top: 30px;
+}
+
+.produtos-rosto .titulo-rosto {
+    margin: 10px 14px;
+}
+
+.produtos-rosto .titulo-rosto h1 {
+    font-size: 20px;
+}
+
+.btn-voltar-rosto,
+.btn-anterior-rosto {
+    width: 36px;
+    min-width: 36px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #000;
+}
+
+.container-rosto .card {
+    min-width: 50%;
+}
+
+.container-rosto .card-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 16px;
+}
+
+.container-rosto .card-img img {
+    width: 100px;
+    height: 100px;
+}
+
+.container-rosto .card-nome {
+    font-size: 13px;
+    width: 130px;
+    height: auto;
+}
+
+.container-rosto .card-preco .preco-atual {
+    font-size: 16px;
+}
+
+.container-rosto .card-preco .preco-antigo {
+    font-size: 12px;
+}
+
+.container-rosto .btn-carrinho {
+    width: 120px;
+    height: 28px;
+    font-size: 10px;
+}
+
+/* ========== BOTÃO MOSTRA MAIS ========== */
+
+.btn-mostra-mais {
+    margin-top: 40px;
+}
+
+.btn-mostra-mais button {
+    width: 220px;
+    height: 42px;
+    font-size: 16px;
+}
+
+/* ========== PRODUTOS OLHOS ========== */
+
+.produtos-olhos {
+    margin-top: 40px;
+}
+
+.produtos-olhos .titulo-olhos {
+    margin: 10px 14px;
+}
+
+.produtos-olhos .titulo-olhos h1 {
+    font-size: 20px;
+}
+
+.btn-voltar-olhos,
+.btn-anterior-olhos {
+    width: 36px;
+    min-width: 36px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #000;
+}
+
+.container-olhos .card {
+    min-width: 50%;
+}
+
+.container-olhos .card-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 16px;
+}
+
+.container-olhos .card-img img {
+    width: 100px;
+    height: 100px;
+}
+
+.container-olhos .card-nome {
+    font-size: 13px;
+    width: 130px;
+    height: auto;
+}
+
+.container-olhos .card-preco .preco-atual {
+    font-size: 16px;
+}
+
+.container-olhos .card-preco .preco-antigo {
+    font-size: 12px;
+}
+
+.container-olhos .btn-carrinho {
+    width: 120px;
+    height: 28px;
+    font-size: 10px;
+}
+
+/* ========== PRODUTOS PINCÉIS ========== */
+
+.produtos-pinceis {
+    margin-top: 40px;
+}
+
+.produtos-pinceis .titulo-pinceis {
+    margin: 10px 14px;
+}
+
+.produtos-pinceis .titulo-pinceis h1 {
+    font-size: 20px;
+}
+
+.btn-voltar-pinceis,
+.btn-anterior-pinceis {
+    width: 36px;
+    min-width: 36px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #000;
+}
+
+.container-pinceis .card {
+    min-width: 50%;
+}
+
+.container-pinceis .card-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 16px;
+}
+
+.container-pinceis .card-img img {
+    width: 100px;
+    height: 100px;
+}
+
+.container-pinceis .card-nome {
+    font-size: 13px;
+    width: 130px;
+    height: auto;
+}
+
+.container-pinceis .card-preco .preco-atual {
+    font-size: 16px;
+}
+
+.container-pinceis .card-preco .preco-antigo {
+    font-size: 12px;
+}
+
+.container-pinceis .btn-carrinho {
+    width: 120px;
+    height: 28px;
+    font-size: 10px;
+    background-color: var(--cor-preta-letras);
+    color: var(--cor-branca-letras);
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px 0px;
+    border: none;
+}
+
+/* ========== FOOTER ========== */
+
+footer {
+    flex-direction: column;
+    gap: 24px;
+    height: auto;
+    padding: 24px 16px 36px;
+    border-radius: 16px 16px 0 0;
+    margin-top: 40px;
+}
+
+.footer-top{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5rem;
+}
+
+.footer-sobre-marca{
+    display: flex;
+    flex-direction: column;
+    font-family: Judson;
+    margin-right: 15rem;
+}
+
+.footer-sobre-marca .footer-marca img {
+    width: 130px;
+    height: 55px;
+}
+
+.footer-sobre-marca p {
+    width: 100%;
+    font-size: 13px;
+    line-height: 20px;
+    margin-right: 40px;
+}
+
+.footer-sobre-marca .redes-sociais {
+   display: none;
+}
+
+footer .navegacao {
+    display: none;
+    /*flex-direction: column;
+    margin-top: 0;
+    gap: 24px;*/
+}
+
+/*
+.footer-navegacao h5,
+.footer-privacidades h5 {
+    font-size: 16px;
+    margin-left: 0;
+}
+
+.footer-navegacao ul,
+.footer-privacidades ul {
+    font-size: 13px;
+}
+
+.footer-navegacao li,
+.footer-privacidades li {
+    margin: 6px 0;
+}
+*/

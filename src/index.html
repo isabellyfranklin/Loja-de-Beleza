@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="stylesheet" href="css/mobile.css" media="screen and (max-width: 767px)">
+
+    <link rel="stylesheet" href="css/tablet.css" media="screen and (min-width: 640px) and (max-width: 1024px)">
+
+    <title>Loja de Beleza</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="barra-de-promocao">
+            <p>50% DE DESCONTO EM COMPRAS ACIMA DE $300</p>
+        </div>
+
+        <div class="navbar">
+            <img class="logo" src="img/logo.png" alt="Logo do site">
+
+            <span id="menu" class="material-symbols-outlined" onclick="clickmenu()">
+            menu
+            </span>
+            <nav>   
+                 <ul>
+                    <li><a href="#">LANÇAMENTO</a></li>
+                    <li><a href="#">MAIS VENDIDOS</a></li>
+                    <li><a href="#">LABIOS</a></li>
+                    <li><a href="#">ROSTO</a></li>
+                    <li><a href="#">OLHOS</a></li>
+                    <li><a href="#">PINCEIS</a></li>
+                </ul>
+            </nav>
+            <div class="acessos">
+
+                <div class="pesquisar">
+                    <div class="seach">
+                        <input type="text">
+                        <span class="material-symbols-outlined">search</span>
+                    </div>
+                </div>
+
+                <div class="usuario-acoes">
+                   <span class="material-symbols-outlined">shopping_cart
+                   </span>
+                   <span 
+                   id="person" class="material-symbols-outlined" >person
+                   </span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--SLIDER CARROSEUL-->
+    <section>
+        <div class="slider">
+            <figure>
+                <div class="slide">
+                    <img src="img/scrolls-principais/scroll-01.jpg" alt= "">
+                </div>
+                <div class="slide">
+                    <img src="img/scrolls-principais/scroll-02.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/scrolls-principais/scroll-01.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/scrolls-principais/scroll-02.png" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/scrolls-principais/scroll-01.jpg" alt="">
+                </div>
+                <div class="slide">
+                    <img src="img/scrolls-principais/scroll-02.png" alt="">
+                </div>
+            </figure>
+        </div>
+    </section>
+
+    <!--PRODUTOS MAIS VENDIDOS -->
+    <section class="produtos-mais-vendidos">
+
+        <div class="titulo-mais-vendido">
+            <h1>Mais Vendidos:</h1>
+        </div>
+
+        <div class="slider-container-mais-vendidos">
+
+            <button class="btn-voltar" id="btn-voltar">
+                <span class="material-symbols-outlined">
+                    arrow_back_ios
+                </span>
+            </button>
+
+            <div class="container-mais-vendidos">
+
+                <!--PRODUTO 01-->
+                <article class="card">
+                    <div class="card-img">
+                        <img src="img/produtos/labios/batom-escuro.png" alt="Pincel">
+                    </div>
+                    <h3 class="card-nome">SuperStay Vinyl Batom Líquido, Longa Duração</h3>
+                    <div class="card-preco">
+                        <strong class="preco-atual">80,66</strong>
+                        <del class="preco-antigo" >110,60</del>
+                    </div>
+            
+                    <button class="btn-carrinho">
+                        Adicionar no Carrinho
+                    </button>
+                </article>
+
+                <!--PRODUTO 02-->
+                <article class="card">
+                    <div class="card-img">
+                        <img src="img/produtos/mais-vendidos/rimel.png" alt="Pincel">
+                    </div>
+                    <h3 class="card-nome">Máscara de Cílios Bomb Volumaço</h3>
+                    <div class="card-preco">
+                        <strong class="preco-atual">44,99</strong>
+                        <del class="preco-antigo" >55,99</del>
+                    </div>
+            
+                    <button class="btn-carrinho">
+                        Adicionar no Carrinho
+                    </button>
+                </article>
+
+                <!--PRODUTO 03-->
+                <article class="card">
+                    <div class="card-img">
+                        <img src="img/produtos/labios/gloss-labial-stick-vult.png" alt="Pincel">
+                    </div>
+                    <h3 class="card-nome">Gloss & Baton Marrom - Vult</h3>
+                    <div class="card-preco">
+                        <strong class="preco-atual">42,49</strong>
+                        <del class="preco-antigo" >49,99</del>
+                    </div>
+            
+                    <button class="btn-carrinho">
+                        Adicionar no Carrinho
+                    </button>
+                </article>
+
+                <!--PRODUTO 04-->
+                <article class="card">
+                    <div class="card-img">
+                        <img src="img/produtos/olhos/gel-de-sobrancelha.png" alt="Pincel">
+                    </div>
+                    <h3 class="card-nome">Gel de Sobrancelha</h3>
+                    <div class="card-preco">
+                        <strong class="preco-atual">20,00</strong>
+                        <del class="preco-antigo" >30,90</del>
+                    </div>
+            
+                    <button class="btn-carrinho">
+                        Adicionar no Carrinho
+                    </button>
+                </article>
+
+                <!--PRODUTO 05-->
+                <article class="card">
+                    <div class="card-img">
+                        <img src="img/produtos/olhos/sombra-marrom.png" alt="Pincel">
+                    </div>
+                    <h3 class="card-nome">Sombra de Olhos - Marrom</h3>
+                    <div class="card-preco">
+                        <strong class="preco-atual">39,90</strong>
+                        <del class="preco-antigo" >70,99</del>
+                    </div>
+            
+                    <button class="btn-carrinho">
+                        Adicionar no Carrinho
+                    </button>
+                </article>
+
+                <!--PRODUTO 06-->
+                <article class="card">
+                    <div class="card-img">
+                        <img src="img/produtos/rosto/Creme-de-colageno (1).png">
+                    </div>
+                    <h3 class="card-nome">Creme Facial Collagen <br> Jelly</h3>
+                    <div class="card-preco">
+                        <strong class="preco-atual">279,99</strong>
+                        <del class="preco-antigo" >399,00</del>
+                    </div>
+            
+                    <button class="btn-carrinho">
+                        Adicionar no Carrinho
+                    </button>
+                </article>
+
+                <!--PRODUTO 07-->
+                <article class="card">
+                    <div class="card-img">
+                        <img src="img/produtos/labios/gloss-fran-vermelho.png" alt="Pincel">
+                    </div>
+                    <h3 class="card-nome">Gloss Lip Chilli Fran by Franciny Ehlke</h3>
+                    <div class="card-preco">
+                        <strong class="preco-atual">36,00</strong>
+                        <del class="preco-antigo" >50,00</del>
+                    </div>
+            
+                    <button class="btn-carrinho">
+                        Adicionar no Carrinho
+                    </button>
+                </article>
+
+                <!--PRODUTO 08-->
+                <article class="card">
+                    <div class="card-img">
+                        <img src="img/produtos/pinceis/kit-de-pinceis-05.png" alt="Pincel">
+                    </div>
+                    <h3 class="card-nome">Kit 5 Pinceis Multifuncional</h3>
+                    <div class="card-preco">
+                        <strong class="preco-atual">28,99</strong>
+                        <del class="preco-antigo" >75,38</del>
+                    </div>
+            
+                    <button class="btn-carrinho">
+                        Adicionar no Carrinho
+                    </button>
+                </article>
+
+                <!--PRODUTO 09-->
+                <article class="card">
+                    <div class="card-img">
+                        <img src="img/produtos/rosto/tonico-facial-em-disco (1).png" alt="Pincel">
+                    </div>
+                    <h3 class="card-nome">Tônico Facial em Disco Zero Pore Pad 70 Discos</h3>
+                    <div class="card-preco">
+                        <strong class="preco-atual">209,99</strong>
+                        <del class="preco-antigo" >300,00</del>
+                    </div>
+            
+                    <button class="btn-carrinho">
+                        Adicionar no Carrinho
+                    </button>
+                </article>
+
+                <!--PRODUTO 10-->
+                <article class="card">
+                    <div class="card-img">
+                        <img src="img/produtos/rosto/cleasing-oil.png">
+                    </div>
+                    <h3 class="card-nome">Cleasing Oil Removedor de Maquiagem</h3>
+                    <div class="card-preco">
+                        <strong class="preco-atual">61,90</strong>
+                        <del class="preco-antigo" >94,99</del>
+                    </div>
+                    <button class="btn-carrinho">
+                        Adicionar no Carrinho
+                    </button>
+                </article>  
+            </div>
+
+            <button class="btn-anterior" id="btn-anterior">
+                <span class="material-symbols-outlined">
+                    arrow_forward_ios
+                </span>
+            </button>
+        </div>
+    </section>
+
+    <!--LAÇAMENTO E SOBRE-->
+   <section class="lancamento-sobre">
+
+    <div class="lancamento">
+        <div class="slide-lancamento">
+            <img src="img/scroll-lancamento/hero-section-01-lancamento.PNG" alt="Modelo com maquiagem">
+        </div>
+    </div>
+
+    <section class="sobre">
+
+        <span class="sobre-label">Sobre nós</span>
+
+        <h2>Beleza que inspira confiança</h2>
+
+        <div class="textos-sobre">
+            <p class="texto-sobre">
+                Aqui você encontra uma seleção incrível de produtos das melhores marcas de beleza,
+                reunindo qualidade, estilo e tendências em um só lugar. Trabalhamos com maquiagens
+                para todos os estilos e ocasiões, desde produções básicas para o dia a dia até makes
+                sofisticadas para eventos especiais.
+            </p>
+            <p class="texto-sobre">
+                Nossa missão é valorizar sua beleza e ajudar você a se sentir ainda mais confiante
+                através da maquiagem. Oferecemos produtos como bases, corretivos, sombras, blushes,
+                batons, iluminadores, máscaras de cílios e muito mais.
+            </p>
+        </div>
+
+        <div class="secoes">
+            <article class="secao">
+                <span><img src="img/simbolos/qualidade.png" alt="Imagem Qualidade"></span>
+                <p class="secao-titulo">Qualidade</p>
+                <p class="secao-paragrafo">Produtos das maiores marcas de beleza.</p>
+            </article>
+            <article class="secao">
+                <span><img src="img/simbolos/variedades.png" alt="Imagem Variedade"></span>
+                <p class="secao-titulo">Variedade</p>
+                <p class="secao-paragrafo">Tudo que você precisa em um só lugar.</p>
+            </article>
+            <article class="secao">
+                <span><img src="img/simbolos/confiança.png" alt="Imagem Confiança"></span>
+                <p class="secao-titulo">Confiança</p>
+                <p class="secao-paragrafo">Para você se sentir linda em qualquer ocasião.</p>
+            </article>
+            <article class="secao">
+                <span><img src="img/simbolos/novidades.png" alt="Imagem Novidades"></span>
+                <p class="secao-titulo">Novidades</p>
+                <p class="secao-paragrafo">Tendências e produtos queridinhos do momento.</p>
+            </article>
+        </div>
+
+        <div class="banner-explore">
+            <span><img src="img/simbolos/batom.png" alt=""></span>
+            <div class="banner-explore-texto">
+                <p>Explore sem limites!</p>
+                <p>Descubra novas marcas e encontre tudo o que você precisa para criar makes incríveis!</p>
+            </div>
+        </div>
+
+        <div class="btn-saiba-mais">
+            <button>Explorar Produtos →</button>
+        </div>
+
+    </section>
+
+</section>
+
+    <!--PRODUTOS LABIOS -->
+    <section class="produtos-labios">
+
+        <div class="titulo-labios">
+                <h1>Labios:</h1>
+            </div>
+
+        <div class="slider-container-labios">
+
+            <button class="btn-voltar-labios" id="btn-voltar-labios">
+                <span class="material-symbols-outlined">
+                    arrow_back_ios
+                </span>
+            </button>
+
+            <div class="container-labios">
+
+                <!--PRODUTO 01-->
+                <article class="card">
+                    <div class="card-img">
+                        <img src="img/produtos/labios/batom-nude.png" alt="Pincel">
+                    </div>
+                    <h3 class="card-nome">SuperStay Vinyl Batom Líquido, Longa Duração</h3>
+                    <div class="card-preco">
+                        <strong class="preco-atual">80,66</strong>
+                        <del class="preco-antigo" >110,60</del>
+                    </div>
+            
+                    <button class="btn-carrinho">
+                        Adicionar no Carrinho
+                    </button>
+                </article>
+
+                <!--PRODUTO 02-->
+                <article class="card">
+                    <div class="card-img">
+                        <img src="img/produtos/labios/batom-escuro.png" alt="Pincel">
+                    </div>
+                    <h3 class="card-nome">SuperStay Vinyl Batom Líquido, Longa Duração</h3>
+                    <div class="card-preco">
+                        <strong class="preco-atual">80,66</strong>
+                        <del class="preco-antigo" >110,60</del>
+                    </div>
+            
+                    <button class="btn-carrinho">
+                        Adicionar no Carrinho
+                    </button>
+                </article>
+
+                <!--PRODUTO 03-->
+                <article class="card">
+                    <div class="card-img">
+                        <img src="img/produtos/labios/gloss-fran-vermelho.png" alt="Pincel">
+                    </div>
+                    <h3 class="card-nome">Gloss Lip Chilli Fran by Franciny Ehlke</h3>
+                    <div class="card-preco">
+                        <strong class="preco-atual">36,00</strong>
+                        <del class="preco-antigo" >50,00</del>
+                    </div>
+            
+                    <button class="btn-carrinho">
+                        Adicionar no Carrinho
+                    </button>
+                </article>
+
+                <!--PRODUTO 04-->
+                <article class="card">
+                    <div class="card-img">
+                        <img src="img/produtos/labios/lip-honey.png" alt="Pincel">
+                    </div>
+                    <h3 class="card-nome">Lip Honey Gloss Labial com Aroma de Mel</h3>
+                    <div class="card-preco">
+                        <strong class="preco-atual">39,90</strong>
+                        <del class="preco-antigo" >54,99</del>
+                    </div>
+            
+                    <button class="btn-carrinho">
+                        Adicionar no Carrinho
+                    </button>
+                </article>
+
+                <!--PRODUTO 05-->
+                <article class="card">
+                    <div class="card-img">
+                        <img src="img/produtos/labios/gloss-coreano-03 (1).png" alt="Pincel">
+                    </div>
+                    <h3 class="card-nome">BLACK ROUGE Glow Bokki Tint Red </h3>
+                    <div class="card-preco">
+                        <strong class="preco-atual">80,60</strong>
+                        <del class="preco-antigo" >70,99</del>
+                    </div>
+            
+                    <button class="btn-carrinho">
+                        Adicionar no Carrinho
+                    </button>
+                </article>
+
+                <!--PRODUTO 06-->
+                <article class="card">
+                    <div class="card-img">
+                        <img src="img/produtos/labios/gloss-labial-stick-vult.png" alt="Pincel">
+                    </div>
+                    <h3 class="card-nome">Gloss & Baton Marrom - Vult</h3>
+                    <div class="card-preco">
+                        <strong class="preco-atual">42,49</strong>
+                        <del class="preco-antigo" >49,99</del>
+                    </div>
+            
+                    <button class="btn-carrinho">
+                        Adicionar no Carrinho
+                    </button>
+                </article>
+
+                 <!--PRODUTO 07
+                <article class="card">
+                    <div class="card-img">
+                        <img src="img/produtos/labios/gloss-coreano.png" alt="Pincel">
+                    </div>
+                    <h3 class="card-nome">Gloss</h3>
+                    <div class="card-preco">
+                        <strong class="preco-atual">44,99</strong>
+                        <del class="preco-antigo" >70,99</del>
+                    </div>
+            
+                    <button class="btn-carrinho">
+                        Adicionar no Carrinho
+                    </button>
+                </article>
+                -->
+
+                <!--PRODUTO 08
+                <article class="card">
+                    <div class="card-img">
+                        <img src="img/" alt="Pincel">
+                    </div>
+                    <h3 class="card-nome">Batom</h3>
+                    <div class="card-preco">
+                        <strong class="preco-atual">44,99</strong>
+                        <del class="preco-antigo" >70,99</del>
+                    </div>
+            
+                    <button class="btn-carrinho">
+                        Adicionar no Carrinho
+                    </button>
+                </article>
+                -->
+
+                <!--PRODUTO 09
+                <article class="card">
+                    <div class="card-img">
+                        <img src="img/pincel.png" alt="Pincel">
+                    </div>
+                    <h3 class="card-nome"></h3>
+                    <div class="card-preco">
+                        <strong class="preco-atual">44,99</strong>
+                        <del class="preco-antigo" >70,99</del>
+                    </div>
+            
+                    <button class="btn-carrinho">
+                        Adicionar no Carrinho
+                    </button>
+                </article>
+                -->
+
+                <!--PRODUTO 10
+                <article class="card">
+                    <div class="card-img">
+                        <img src="img/pincel.png" alt="Pincel">
+                    </div>
+                    <h3 class="card-nome"></h3>
+                    <div class="card-preco">
+                        <strong class="preco-atual">44,99</strong>
+                        <del class="preco-antigo" >70,99</del>
+                    </div>
+            
+                    <button class="btn-carrinho">
+                        Adicionar no Carrinho
+                    </button>
+                </article>
+                -->
+            </div>
+
+            <button class="btn-anterior-labios" id="btn-anterior-labios">
+                <span class="material-symbols-outlined">
+                    arrow_forward_ios
+                </span>
+            </button>
+        </div>    
+            
+    </section>
+
+    <!--BANNER DE PROMOÇÃO-->
+    <section class="desconto">
+            <div class="aviso-desconto">
+                <div class="aviso-desconto__texto">
+                    <strong> 50% DE DESCONTO EM COMPRAS ACIMA DE $300</strong>
+                    <p>Aplique o cupom MAKE20 no carrinho</p>
+                </div>
+                <a>VEJA A SELEÇÃO</a>
+            </div>
+    </section>
+
+
+    <!--PRODUTOS ROSTO-->
+    <section class="produtos-rosto">
+
+        <div class="titulo-rosto">
+                <h1>Rosto:</h1>
+            </div>
+
+        <div class="slider-container-rosto">
+
+            <button class="btn-voltar-rosto" id="btn-voltar-rosto">
+                <span class="material-symbols-outlined">
+                    arrow_back_ios
+                </span>
+            </button>
+
+            <div class="container-rosto">
+
+                <!--PRODUTO 01-->
+                <article class="card">
+                    <div class="card-img">
+                        <img src="img/produtos/rosto/blush-rosa.png" alt="Pincel">
+                    </div>
+                    <h3 class="card-nome">Blush <br> Rosa</h3>
+                    <div class="card-preco">
+                        <strong class="preco-atual">50,70</strong>
+                        <del class="preco-antigo" >72,50</del>
+                    </div>
+            
+                    <button class="btn-carrinho">
+                        Adicionar no Carrinho
+                    </button>
+                </article>
+
+                <!--PRODUTO 02-->
+                <article class="card">
+                    <div class="card-img">
+                        <img src="img/produtos/rosto/blush-cherry.png" alt="Pincel">
+                    </div>
+                    <h3 class="card-nome">Duo Blush<br> Cherry</br></h3>
+                    <div class="card-preco">
+                        <strong class="preco-atual">50,70</strong>
+                        <del class="preco-antigo" >72,50</del>
+                    </div>
+            
+                    <button class="btn-carrinho">
+                        Adicionar no Carrinho
+                    </button>
+                </article>
+
+                <!--PRODUTO 03-->
+                <article class="card">
+                    <div class="card-img">
+                        <img src="img/produtos/rosto/kit-skincar.png" alt="Pincel">
+                    </div>
+                    <h3 class="card-nome">Kit Skincare Madagascar Centella Mini </h3>
+                    <div class="card-preco">
+                        <strong class="preco-atual">286,86</strong>
+                        <del class="preco-antigo" >339,99</del>
+                    </div>
+            
+                    <button class="btn-carrinho">
+                        Adicionar no Carrinho
+                    </button>
+                </article>
+
+                <!--PRODUTO 04-->
+                <article class="card">
+                    <div class="card-img">
+                        <img src="img/produtos/rosto/tonico-facial-em-disco (1).png" alt="Pincel">
+                    </div>
+                    <h3 class="card-nome">Tônico Facial em Disco Zero Pore Pad 70 Discos</h3>
+                    <div class="card-preco">
+                        <strong class="preco-atual">209,99</strong>
+                        <del class="preco-antigo" >300,00</del>
+                    </div>
+            
+                    <button class="btn-carrinho">
+                        Adicionar no Carrinho
+                    </button>
+                </article>
+
+                <!--PRODUTO 05-->
+                <article class="card">
+                    <div class="card-img">
+                        <img src="img/produtos/rosto/mascaras-coreana.png" alt="Pincel">
+                    </div>
+                    <h3 class="card-nome">Kit 3 Unidades Máscara Hidratante Facial </h3>
+                    <div class="card-preco">
+                        <strong class="preco-atual">44,99</strong>
+                        <del class="preco-antigo" >70,99</del>
+                    </div>
+            
+                    <button class="btn-carrinho">
+                        Adicionar no Carrinho
+                    </button>
+                </article>
+
+                <!--PRODUTO 06-->
+                <article class="card">
+                    <div class="card-img">
+                        <img src="img/produtos/rosto/cleasing-oil.png">
+                    </div>
+                    <h3 class="card-nome">Cleasing Oil Removedor de Maquiagem</h3>
+                    <div class="card-preco">
+                        <strong class="preco-atual">61,90</strong>
+                        <del class="preco-antigo" >94,99</del>
+                    </div>
+                    <button class="btn-carrinho">
+                        Adicionar no Carrinho
+                    </button>
+                </article>
+
+                <!--PRODUTO 07-->
+                <article class="card">
+                    <div class="card-img">
+                        <img src="img/produtos/rosto/creme-para-os-olhos.png" alt="Pincel">
+                    </div>
+                    <h3 class="card-nome">Serum Missha Chogongjin 248,70</h3>
+                    <div class="card-preco">
+                        <strong class="preco-atual">248,70</strong>
+                        <del class="preco-antigo" >400,70</del>
+                    </div>
+                    <button class="btn-carrinho">
+                        Adicionar no Carrinho
+                    </button>
+                </article>
+
+                <!--PRODUTO 08-->
+                <article class="card">
+                    <div class="card-img">
+                        <img src="img/produtos/rosto/guacha.png" alt="Pincel">
+                    </div>
+                    <h3 class="card-nome">GuaSha em Aço <br>Inoxidável</h3>
+                    <div class="card-preco">
+                        <strong class="preco-atual">21,71</strong>
+                        <del class="preco-antigo" >70,99</del>
+                    </div>
+                    <button class="btn-carrinho">
+                        Adicionar no Carrinho
+                    </button>  
+                </article>
+
+                <!--PRODUTO 09-->  
+                <article class="card">
+                    <div class="card-img">
+                        <img src="img/produtos/rosto/Creme-de-colageno (1).png">
+                    </div>
+                    <h3 class="card-nome">Creme Facial Collagen <br> Jelly</h3>
+                    <div class="card-preco">
+                        <strong class="preco-atual">279,99</strong>
+                        <del class="preco-antigo" >399,00</del>
+                    </div>
+            
+                    <button class="btn-carrinho">
+                        Adicionar no Carrinho
+                    </button>
+                </article>
+
+                <!--PRODUTO 10-->
+                <article class="card">
+                    <div class="card-img">
+                        <img src="img/produtos/rosto/creme.png" alt="Pincel">
+                    </div>
+                    <h3 class="card-nome">Sérum De Microagulhamento</h3>
+                    <div class="card-preco">
+                        <strong class="preco-atual">165,99</strong>
+                        <del class="preco-antigo" >250,99</del>
+                    </div>
+            
+                    <button class="btn-carrinho">
+                        Adicionar no Carrinho
+                    </button>
+                </article>
+            </div>
+
+            <button class="btn-anterior-rosto" id="btn-anterior-rosto">
+                <span class="material-symbols-outlined">
+                    arrow_forward_ios
+                </span>
+            </button>
+        </div>   
+
+        <!--BOTÃO MOSTRA MAIS PRODUTOS-->
+        <div class="btn-mostra-mais" onclick="mostrarMais()">
+            <button>Mostra Mais Produtos</button>
+        </div>
+             
+    </section>
+
+    <!--PRODUTOS OLHOS -->
+    <section class="produtos-olhos" id="secao-olhos" style="display: none;">
+
+        <div class="titulo-olhos">
+                <h1>Olhos:</h1>
+            </div>
+
+        <div class="slider-container-olhos">
+
+            <button class="btn-voltar-olhos" id="btn-voltar-olhos">
+                <span class="material-symbols-outlined">
+                    arrow_back_ios
+                </span>
+            </button>
+
+            <div class="container-olhos">
+
+                <!--PRODUTO 01-->
+                <article class="card">
+                    <div class="card-img">
+                        <img src="img/produtos/olhos/sombra-marrom.png" alt="Pincel">
+                    </div>
+                    <h3 class="card-nome">Sombra de Olhos - Marrom</h3>
+                    <div class="card-preco">
+                        <strong class="preco-atual">39,90</strong>
+                        <del class="preco-antigo" >70,99</del>
+                    </div>
+            
+                    <button class="btn-carrinho">
+                        Adicionar no Carrinho
+                    </button>
+                </article>
+
+                <!--PRODUTO 02-->
+                <article class="card">
+                    <div class="card-img">
+                        <img src="img/produtos/olhos/sombra-brilhante.png "alt="Pincel">
+                    </div>
+                    <h3 class="card-nome">Sombra de Olhos - Glitter</h3>
+                    <div class="card-preco">
+                        <strong class="preco-atual">39,90</strong>
+                        <del class="preco-antigo" >70,99</del>
+                    </div>
+            
+                    <button class="btn-carrinho">
+                        Adicionar no Carrinho
+                    </button>
+                </article>
+
+                <!--PRODUTO 03-->
+                <article class="card">
+                    <div class="card-img">
+                    <img src="img/produtos/olhos/paleta-de-maquiagem-sombras-marrons.png" alt="Pincel">
+                    </div>
+                    <h3 class="card-nome">Paletas de Sombras Marrons</h3>
+                    <div class="card-preco">
+                        <strong class="preco-atual">35,90</strong>
+                        <del class="preco-antigo" >50,90</del>
+                    </div>
+            
+                    <button class="btn-carrinho">
+                        Adicionar no Carrinho
+                    </button>
+                </article>
+
+                <!--PRODUTO 04-->
+                <article class="card">
+                    <div class="card-img">
+                        <img src="img/produtos/olhos/gel-de-sobrancelha.png" alt="Pincel">
+                    </div>
+                    <h3 class="card-nome">Gel de Sobrancelha</h3>
+                    <div class="card-preco">
+                        <strong class="preco-atual">20,00</strong>
+                        <del class="preco-antigo" >30,90</del>
+                    </div>
+            
+                    <button class="btn-carrinho">
+                        Adicionar no Carrinho
+                    </button>
+                </article>
+
+                <!--PRODUTO 05-->
+                <article class="card">
+                    <div class="card-img">
+                        <img src="img/produtos/olhos/mascara-para-os-olhos.png" alt="Pincel">
+                    </div>
+                    <h3 class="card-nome">Mascara para os Olhos</h3>
+                    <div class="card-preco">
+                        <strong class="preco-atual">44,99</strong>
+                        <del class="preco-antigo" >70,99</del>
+                    </div>
+            
+                    <button class="btn-carrinho">
+                        Adicionar no Carrinho
+                    </button>
+                </article>
+
+                <!--PRODUTO 06-->
+                <article class="card">
+                    <div class="card-img">
+                        <img src="img/produtos/olhos/lapis-preto.png" alt="Pincel">
+                    </div>
+                    <h3 class="card-nome">Lapis para os Olhos - Marrom </h3>
+                    <div class="card-preco">
+                        <strong class="preco-atual">60,85</strong>
+                        <del class="preco-antigo" >75,85</del>
+                    </div>
+            
+                    <button class="btn-carrinho">
+                        Adicionar no Carrinho
+                    </button>
+                </article>
+
+                <!--PRODUTO 07-->
+                <article class="card">
+                    <div class="card-img">
+                        <img src="img/produtos/mais-vendidos/rimel.png" alt="Pincel">
+                    </div>
+                    <h3 class="card-nome">Máscara de Cílios Bomb Volumaço</h3>
+                    <div class="card-preco">
+                        <strong class="preco-atual">44,99</strong>
+                        <del class="preco-antigo" >55,99</del>
+                    </div>
+            
+                    <button class="btn-carrinho">
+                        Adicionar no Carrinho
+                    </button>
+                </article>
+
+                <!--PRODUTO 08-->
+                <article class="card">
+                    <div class="card-img">
+                        <img src="img/produtos/olhos/delineado-preto.png" alt="Pincel">
+                    </div>
+                    <h3 class="card-nome">Caneta Delineadora - Preta</h3>
+                    <div class="card-preco">
+                        <strong class="preco-atual">42,15</strong>
+                        <del class="preco-antigo" >49,12</del>
+                    </div>
+            
+                    <button class="btn-carrinho">
+                        Adicionar no Carrinho
+                    </button>
+                </article>
+
+                <!--PRODUTO 09-->
+                <article class="card">
+                    <div class="card-img">
+                        <img src="img/produtos/olhos/sombra-brilhante.png "alt="Pincel">
+                    </div>
+                    <h3 class="card-nome">Sombra de Olhos - Glitter</h3>
+                    <div class="card-preco">
+                        <strong class="preco-atual">44,99</strong>
+                        <del class="preco-antigo" >70,99</del>
+                    </div>
+            
+                    <button class="btn-carrinho">
+                        Adicionar no Carrinho
+                    </button>
+                </article>
+
+
+                <!--PRODUTO 10-->
+                <article class="card">
+                    <div class="card-img">
+                        <img src="img/produtos/olhos/delineado-marrom-ponta-fina.png" alt="Pincel">
+                    </div>
+                    <h3 class="card-nome">Caneta Delineadora - Marrom</h3>
+                    <div class="card-preco">
+                        <strong class="preco-atual">42,15</strong>
+                        <del class="preco-antigo" >49,15</del>
+                    </div>
+            
+                    <button class="btn-carrinho">
+                        Adicionar no Carrinho
+                    </button>
+                </article>
+            </div>
+
+            <button class="btn-anterior-olhos" id="btn-anterior-olhos">
+                <span class="material-symbols-outlined">
+                    arrow_forward_ios
+                </span>
+            </button>
+        </div>
+
+    </section>
+
+    <!--PRODUTOS PINCEIS -->
+    <section class="produtos-pinceis" id="secao-pinceis" style="display: none;">
+
+        <div class="titulo-pinceis">
+                <h1>Pinceis:</h1>
+            </div>
+
+        <div class="slider-container-pinceis">
+
+            <button class="btn-voltar-pinceis" id="btn-voltar-pinceis">
+                <span class="material-symbols-outlined">
+                    arrow_back_ios
+                </span>
+            </button>
+
+            <div class="container-pinceis">
+
+                <!--PRODUTO 01-->
+                <article class="card">
+                    <div class="card-img">
+                        <img src="img/produtos/pinceis/pinceil-mini-blush.png" alt="Pincel">
+                    </div>
+                    <h3 class="card-nome">Pincel Mini  Retrátil com Tampa</h3>
+                    <div class="card-preco">
+                        <strong class="preco-atual">20,00</strong>
+                        <del class="preco-antigo" >30,00</del>
+                    </div>
+            
+                    <button class="btn-carrinho">
+                        Adicionar no Carrinho
+                    </button>
+                </article>
+
+                <!--PRODUTO 02-->
+                <article class="card">
+                    <div class="card-img">
+                        <img src="img/produtos/pinceis/pincel-preto-chanfradoo.png" alt="Pincel">
+                    </div>
+                    <h3 class="card-nome">Pincel Kabuki Retrátil Multifuncional </h3>
+                    <div class="card-preco">
+                        <strong class="preco-atual">49,99</strong>
+                        <del class="preco-antigo" >65,99</del>
+                    </div>
+            
+                    <button class="btn-carrinho">
+                        Adicionar no Carrinho
+                    </button>
+                </article>
+
+                <!--PRODUTO 03-->
+                <article class="card">
+                    <div class="card-img">
+                        <img src="img/produtos/pinceis/pincel-iluminaod.png" alt="Pincel">
+                    </div>
+                    <h3 class="card-nome">Pincel Multifuncional Onix </h3>
+                    <div class="card-preco">
+                        <strong class="preco-atual">30,89</strong>
+                        <del class="preco-antigo" >50,89</del>
+                    </div>
+            
+                    <button class="btn-carrinho">
+                        Adicionar no Carrinho
+                    </button>
+                </article>
+
+                <!--PRODUTO 04-->
+                <article class="card">
+                    <div class="card-img">
+                        <img src="img/produtos/pinceis/kit-de-pinceis-05.png" alt="Pincel">
+                    </div>
+                    <h3 class="card-nome">Kit 5 Pinceis Multifuncional</h3>
+                    <div class="card-preco">
+                        <strong class="preco-atual">28,99</strong>
+                        <del class="preco-antigo" >75,38</del>
+                    </div>
+            
+                    <button class="btn-carrinho">
+                        Adicionar no Carrinho
+                    </button>
+                </article>
+
+                <!--PRODUTO 05-->
+                <article class="card">
+                    <div class="card-img">
+                        <img src="img/produtos/pinceis/kit-de-pinceis.png" alt="Pincel">
+                    </div>
+                    <h3 class="card-nome">Kit 20 Pinceis De Maquiagem Com Caixa</h3>
+                    <div class="card-preco">
+                        <strong class="preco-atual">44,99</strong>
+                        <del class="preco-antigo" >70,99</del>
+                    </div>
+            
+                    <button class="btn-carrinho">
+                        Adicionar no Carrinho
+                    </button>
+                </article>
+
+                <!--PRODUTO 06-->
+                <article class="card">
+                    <div class="card-img">
+                        <img src="img/produtos/pinceis/pincel-iluminaod.png" alt="Pincel">
+                    </div>
+                    <h3 class="card-nome">Pincel Multifuncional Onix </h3>
+                    <div class="card-preco">
+                        <strong class="preco-atual">30,89</strong>
+                        <del class="preco-antigo" >50,89</del>
+                    </div>
+            
+                    <button class="btn-carrinho">
+                        Adicionar no Carrinho
+                    </button>
+                </article>
+
+                <!--PRODUTO 07-->
+                <article class="card">
+                    <div class="card-img">
+                        <img src="img/produtos/pinceis/pinceil-mini-blush.png" alt="Pincel">
+                    </div>
+                    <h3 class="card-nome">Pincel Mini  Retrátil com Tampa</h3>
+                    <div class="card-preco">
+                        <strong class="preco-atual">20,00</strong>
+                        <del class="preco-antigo" >30,00</del>
+                    </div>
+            
+                    <button class="btn-carrinho">
+                        Adicionar no Carrinho
+                    </button>
+                </article>
+
+                <!--PRODUTO 08-->
+                <article class="card">
+                    <div class="card-img">
+                        <img src="img/produtos/pinceis/kit-de-pinceis-05.png" alt="Pincel">
+                    </div>
+                    <h3 class="card-nome">Kit 5 Pinceis Multifuncional</h3>
+                    <div class="card-preco">
+                        <strong class="preco-atual">28,99</strong>
+                        <del class="preco-antigo" >75,38</del>
+                    </div>
+            
+                    <button class="btn-carrinho">
+                        Adicionar no Carrinho
+                    </button>
+                </article>
+
+                <!--PRODUTO 09-->
+                <article class="card">
+                    <div class="card-img">
+                        <img src="img/produtos/pinceis/pinceil-mini-blush.png" alt="Pincel">
+                    </div>
+                    <h3 class="card-nome">Pincel Mini  Retrátil com Tampa</h3>
+                    <div class="card-preco">
+                        <strong class="preco-atual">20,00</strong>
+                        <del class="preco-antigo" >30,00</del>
+                    </div>
+            
+                    <button class="btn-carrinho">
+                        Adicionar no Carrinho
+                    </button>
+                </article>
+
+                <!--PRODUTO 10-->
+                <article class="card">
+                    <div class="card-img">
+                        <img src="img/produtos/pinceis/kit-de-pinceis.png" alt="Pincel">
+                    </div>
+                    <h3 class="card-nome">Kit 20 Pinceis De Maquiagem Com Caixa</h3>
+                    <div class="card-preco">
+                        <strong class="preco-atual">44,99</strong>
+                        <del class="preco-antigo" >70,99</del>
+                    </div>
+            
+                    <button class="btn-carrinho">
+                        Adicionar no Carrinho
+                    </button>
+                </article>
+            </div>
+
+            <button class="btn-anterior-pinceis" id="btn-anterior-pinceis">
+                <span class="material-symbols-outlined">
+                    arrow_forward_ios
+                </span>
+            </button>
+            
+        </div>
+
+    </section>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="footer-top">
+            <!--Logo da marca-->
+            <section class="footer-sobre-marca">
+                 <div class="footer-marca">
+                    <h1>Nome da marca</h1>
+                </div>
+                <p>
+                     Nossa marca reúne as melhores maquiagens e produtos de beleza em um só lugar, oferecendo qualidade, variedade e as principais tendências do momento. Beleza, autoestima e estilo para realçar ainda mais você.
+                </p>
+                <nav class="footer-redes-sociais">
+                    <ul>
+                        <li><a href="#"><img src="img/icons/icon-x.svg" alt="twitter"></a></li>
+                        <li><a href="#"><img src="img/icons/icon-face.svg" alt="Facebook"></a></li>
+                        <li><a href="#"><img src="img/icons/icon-insta.svg" alt="Instagram"></a></li>
+                    </ul>
+                </nav>
+            </section>
+            <!--NAVEGAÇÃO-->
+            <div class="navegacao">
+                <nav class="footer-produtos">
+                    <h5>Produtos</h5>
+                    <ul>
+                        <li><a href="#">Labios</a></li>
+                        <li><a href="#">Rosto</a></li>
+                        <li><a href="#">Olhos</a></li>
+                        <li><a href="#">Pinceis</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer-empresa">
+                    <h5>Empresa</h5>
+                    <ul>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Carreira</a></li>
+                        <li><a href="#">Imprensa</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer-recursos">
+                    <h5>Recursos</h5>
+                    <ul>
+                        <li><a href="#">Comunidade</a></li>
+                        <li><a href="#">Ajuda</a></li>
+                        <li><a href="#">Suporte</a></li>
+                        <li><a href="#">Status</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer-termos">
+                    <h5>Legal</h5>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Services</a></li>
+                        <li><a href="#">Cookies</a></li>
+                        <li><a href="#">Licenças</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+
+        <br>
+        <div class="footer-direitos">
+            <hr>
+            <p>© 2026 FitFlow. Todos os direitos reservados.</p>
+            <p>Politica de Privacidadep</p>
+            <p>Termos de Uso</p>
+
+        </div>
+
+    </footer>
+    
+
+    <script src="js/script.js"></script>
+</body>
+</html>
